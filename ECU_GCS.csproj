@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Business\OneDrive\Spatial_Collect\2.Agencies\1.Innoflight\10.Software\EFI SW V1.0\ECU_GCS.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{043200BD-A8B6-472D-A271-BE7360B579F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>ECU_GCS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>ECU_GCS</RootNamespace>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.2.2</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test2|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Test2\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test2|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Test2\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="ZedGraph">
+      <HintPath>lib\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Window\FuelPreTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Cfg_Base.cs" />
+    <Compile Include="Function\CfgManager.cs" />
+    <Compile Include="Function\cfg_e.cs" />
+    <Compile Include="Function\CfgValue.cs" />
+    <Compile Include="Window\AdcCalib.cs" />
+    <Compile Include="Function\InputDialog.cs" />
+    <Compile Include="Function\SetParameter.cs" />
+    <Compile Include="Window\ClickWindow.cs" />
+    <Compile Include="Function\SpeakWarningMessage.cs" />
+    <Compile Include="Window\JetCalib.cs" />
+    <Compile Include="Window\StateWindow.cs" />
+    <Compile Include="Window\DataReplayWindow.cs" />
+    <Compile Include="Function\Agreement_Helper.cs" />
+    <Compile Include="Function\Common.cs" />
+    <Compile Include="Function\FileReadClass.cs" />
+    <Compile Include="Function\CommandEnum.cs" />
+    <Compile Include="Window\CommandControl.cs" />
+    <Compile Include="Window\ConfigWindow.cs" />
+    <Compile Include="Window\MainWindow.cs" />
+    <Compile Include="Function\flg_mode_type.cs" />
+    <Compile Include="Window\MessageControl.cs" />
+    <Compile Include="Function\Program.cs" />
+    <Compile Include="Function\AircraftType.cs" />
+    <Compile Include="Function\T0_Request_Null.cs" />
+    <Compile Include="Function\T1_Request_Common.cs" />
+    <Compile Include="Function\T5_Request_State.cs" />
+    <Compile Include="Function\T7_Request_Config.cs" />
+    <Compile Include="Function\T2_Content_Common.cs" />
+    <Compile Include="Function\T6_Content_State.cs" />
+    <Compile Include="Function\T8_Content_Config.cs" />
+    <Compile Include="Function\T18_Content_Command.cs" />
+    <Compile Include="Function\T18_Content_Command2.cs" />
+    <Compile Include="Function\C0_Request_Null.cs" />
+    <Compile Include="Function\C1_Request_Common.cs" />
+    <Compile Include="Function\C5_Request_State.cs" />
+    <Compile Include="Function\C7_Request_Config.cs" />
+    <Compile Include="Function\sys_data_c.cs" />
+    <Compile Include="Function\C2_Content_Common.cs" />
+    <Compile Include="Function\C6_Content_State.cs" />
+    <Compile Include="Function\C8_Content_Config.cs" />
+    <Compile Include="Function\C18_Content_Command.cs" />
+    <Compile Include="Function\C18_Content_Command2.cs" />
+    <Compile Include="Function\Agreement.cs" />
+    <Compile Include="Function\SerialPortManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Window\RpmControl.cs" />
+    <Compile Include="Window\UCMeter.cs" />
+    <Compile Include="Window\MeterTextLocation.cs" />
+    <Compile Include="Window\UCThermometer.cs" />
+    <Compile Include="Window\TemperatureUnit.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdcCalib.resx" />
+    <EmbeddedResource Include="Cfg_Base.resx" />
+    <EmbeddedResource Include="ClickWindow.resx" />
+    <EmbeddedResource Include="CommandControl.resx" />
+    <EmbeddedResource Include="ConfigWindow.resx" />
+    <EmbeddedResource Include="DataReplayWindow.resx" />
+    <EmbeddedResource Include="FuelPreTest.resx" />
+    <EmbeddedResource Include="JetCalib.resx" />
+    <EmbeddedResource Include="MainWindow.resx" />
+    <EmbeddedResource Include="MessageControl.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Resources\Ellipse.png" />
+    <EmbeddedResource Include="StateWindow.resx" />
+    <EmbeddedResource Include="Window\RpmControl.resx" />
+    <EmbeddedResource Include="Window\UCMeter.resx" />
+    <EmbeddedResource Include="Window\UCThermometer.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
